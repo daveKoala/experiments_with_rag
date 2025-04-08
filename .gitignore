@@ -1,0 +1,12 @@
+.venv
+.env
+__pycache__/
+DS_Store
+
+./data/chunks
+./data/cleaned
+./data/raw
+
+./embeddings
+./models
+./outputs

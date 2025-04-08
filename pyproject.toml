@@ -1,0 +1,35 @@
+[project]
+name = "my-rag-project"
+version = "0.1.0"
+description = "Local document embedding and retrieval pipeline"
+authors = [{ name = "Your Name", email = "your@email.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate",
+    "sentence-transformers",
+    "transformers",
+    "torch",
+    "scikit-learn",
+    "pandas",
+    "numpy<2",
+    "PyPDF2",
+    "pdf2image",
+    "pytesseract",
+    "fastparquet",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+addopts = "--tb=short -q"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
