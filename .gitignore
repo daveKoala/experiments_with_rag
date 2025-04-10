@@ -1,12 +1,15 @@
 .venv
 .env
 __pycache__/
-DS_Store
+.DS_Store
 
-./data/chunks
-./data/cleaned
-./data/raw
+data/chunks/
+data/cleaned/
+data/raw/
 
-./embeddings
-./models
-./outputs
+embeddings/
+models/
+outputs/
+
+.pytest_cache
+
