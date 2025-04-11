@@ -18,6 +18,7 @@ dependencies = [
     "pytesseract",
     "fastparquet",
     "beautifulsoup4",
+    "nltk",
 ]
 
 [project.optional-dependencies]

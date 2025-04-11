@@ -10,6 +10,12 @@ data/raw/
 embeddings/
 models/
 outputs/
-
+build/
 .pytest_cache
 
+
+src/my_rag_project.egg-info/dependency_links.txt
+src/my_rag_project.egg-info/PKG-INFO
+src/my_rag_project.egg-info/requires.txt
+src/my_rag_project.egg-info/SOURCES.txt
+src/my_rag_project.egg-info/top_level.txt

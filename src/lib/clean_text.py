@@ -10,7 +10,7 @@ import re  ## Regex for cleaning text
 
 
 ## But there is so many different strings and content that this is only a starting point.
-def CleanText(text: str) -> str:
+def clean_text(text: str) -> str:
     soup = BeautifulSoup(text, "html.parser")
     text = soup.get_text()  # Remove all HTML tags
     text = re.sub(r"\s+", " ", text)

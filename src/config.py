@@ -12,6 +12,7 @@ class Settings:
         self.CHUNKED_FILE: Path = self.BASE_PATH / "chunked_data.txt"
         self.VECTOR_STORE: Path = self.BASE_PATH / "vector_index_local.parquet"
         self.JSONL_FILE: Path = self.BASE_PATH / "data/cleaned/cleaned_text.jsonl"
+        self.LANGUAGE: str = "english"
         self.CHUNK_SIZE: int = 512
         self.CHUNK_OVERLAP: int = 50
         self.DEBUG: bool = False

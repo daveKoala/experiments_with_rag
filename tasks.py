@@ -17,12 +17,14 @@ def run(command):
 
 
 def test():
-    # run("pytest src/")
-    run("PYTHONPATH=src pytest src/")
+    input_flag = "-s"
+    print(f"PYTHONPATH=src pytest src/ {input_flag} ")
+    run(f"PYTHONPATH=src pytest src/ {input_flag} ")
 
 
 def watch():
-    run("ptw src/")
+    pytest_args = "-s -v"
+    run(f"ptw src/ -- {pytest_args}")
 
 
 def format():
