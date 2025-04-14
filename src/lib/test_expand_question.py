@@ -16,7 +16,7 @@ def test_expand_question_returns_a_dict():
     assert isinstance(result, dict), "The result should be a dictionary."
 
     # Expected content words after stopword filtering
-    expected_keys = {"capital", "france"}
+    expected_keys = {"capital", "France"}
     for key in expected_keys:
         assert key in result, f"Expected key '{key}' not found in the result."
 

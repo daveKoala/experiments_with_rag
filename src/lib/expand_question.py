@@ -56,10 +56,10 @@ def expand_question_to_keywords(question: str) -> dict:
         dict: _description_
     """
     # Clean question first
-    question = question.lower()
     question = re.sub(r"[^\w\s]", "", question)  # Or use the clean text method???
     tokens = question.strip().split()
 
+    # question = question.lower()  # But if its a proper name we should not do this!!
     tokens = [token for token in tokens if token not in stop_words]
 
     # Remove duplicates

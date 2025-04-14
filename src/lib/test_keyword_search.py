@@ -11,4 +11,4 @@ def test_kws_returns_a_string():
 
 def test_keyword_search_basic_cleaning():
     result = kws("What is the capital of France?")
-    assert result == "what is the capital of france", f"Unexpected result: {result}"
+    assert result == "What is the capital of France", f"Unexpected result: {result}"

@@ -12,7 +12,7 @@ def keyword_search(question: str) -> str:
         string: Formatted and prepared string.
     """
 
-    question = question.lower()
+    # question = question.lower() # This will loose context of proper names!!!!
     question = re.sub(r"[^\w\s]", "", question)  # Remove punctuation
     question = re.sub(r"\s+", " ", question).strip()  # Remove extra spaces
     return question
